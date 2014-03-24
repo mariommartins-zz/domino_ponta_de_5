@@ -39,7 +39,7 @@ begin
      Close(pedra);
     end;
   end;
- assign(pedra,'C:\DominoPontaDe5\Pecas_1.arq');
+ assign(pedra,'C:\DominoPontaDe5\Pecas\Pedra_1.arq');
  reset(pedra);
  writeln(aux.grafico1);
  writeln(aux.grafico2);
