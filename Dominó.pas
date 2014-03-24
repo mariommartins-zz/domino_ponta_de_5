@@ -1,4 +1,4 @@
-program domino_ponta_de_5;  {M�rio Augusto Mota Martins e Vladimir Iuri Moreira Gon�alves}
+program domino_ponta_de_5;  {Mário Augusto Mota Martins}
 uses crt;
 type TPedra=record
       grafico1,grafico2,grafico3,grafico4,grafico5:string[5];
