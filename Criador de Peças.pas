@@ -1,4 +1,4 @@
-program Criador_de_pecas; {Mário Augusto Mota Martins e Vladimir Iuri Moreira Gonçalves}
+program Criador_de_pecas; {Mï¿½rio Augusto Mota Martins e Vladimir Iuri Moreira Gonï¿½alves}
 uses crt;
 type TRegistro=record
       grafico1,grafico2,grafico3,grafico4,grafico5:string[5];
@@ -23,7 +23,7 @@ begin
     begin
      k:=k+1;
      str(k,num);
-     nome:=concat('C:\Users\Guto\Desktop\UFBA\Introdução a Lógica de Programação\Compiladores\programas\2ºProjeto-DominóPontaDe5\Peças\Pedra_',num,'.arq');
+     nome:=concat('C:\DominoPontaDe5\Pecas\Pedra_',num,'.arq');
      assign (pedra,nome);
      Rewrite (pedra);
      aux.x:=i;
@@ -39,7 +39,7 @@ begin
      Close(pedra);
     end;
   end;
- assign(pedra,'C:\Users\Guto\Desktop\UFBA\Introdução a Lógica de Programação\Compiladores\programas\2ºProjeto-DominóPontaDe5\Peças\Pedra_1.arq');
+ assign(pedra,'C:\DominoPontaDe5\Pecas_1.arq');
  reset(pedra);
  writeln(aux.grafico1);
  writeln(aux.grafico2);
