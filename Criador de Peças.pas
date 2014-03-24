@@ -1,4 +1,4 @@
-program Criador_de_pecas; {M�rio Augusto Mota Martins e Vladimir Iuri Moreira Gon�alves}
+program Criador_de_pecas; {Mário Augusto Mota Martins}
 uses crt;
 type TRegistro=record
       grafico1,grafico2,grafico3,grafico4,grafico5:string[5];
