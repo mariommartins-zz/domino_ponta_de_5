@@ -1,4 +1,4 @@
-program domino_ponta_de_5;  {Mário Augusto Mota Martins e Vladimir Iuri Moreira Gonçalves}
+program domino_ponta_de_5;  {Mï¿½rio Augusto Mota Martins e Vladimir Iuri Moreira Gonï¿½alves}
 uses crt;
 type TPedra=record
       grafico1,grafico2,grafico3,grafico4,grafico5:string[5];
@@ -16,7 +16,7 @@ var score1,score2,score3,score4,Npedras1,Npedras2,Npedras3,Npedras4,i,vez,t1,t2,
     num,nome:string;
     mesa:array[1..4] of TMesa;
     pedraArq:array[1..28] of TArquivo;
-    pedras,auxP:TPecas; {vetor de peças e vetor auxiliar que tambem vai guardar as peças mas vai ser alterado pelo subprograma croupier}
+    pedras,auxP:TPecas; {vetor de peï¿½as e vetor auxiliar que tambem vai guardar as peï¿½as mas vai ser alterado pelo subprograma croupier}
     Player1,Player2,Player3,Player4:TPlayer;
     procedure titulo;
     begin
@@ -73,7 +73,7 @@ var score1,score2,score3,score4,Npedras1,Npedras2,Npedras3,Npedras4,i,vez,t1,t2,
      else
       write('Player4:',score4);
     end;
-    procedure impressao_para_player(player:TPlayer;u,Npedras:integer); {Imprime as pedras disponíveis de um player a baixo do score do mesmo}
+    procedure impressao_para_player(player:TPlayer;u,Npedras:integer); {Imprime as pedras disponï¿½veis de um player a baixo do score do mesmo}
     var i,x,j:integer;
     begin
      x:=-2;
@@ -116,7 +116,7 @@ var score1,score2,score3,score4,Npedras1,Npedras2,Npedras3,Npedras4,i,vez,t1,t2,
 	   end;
 	 end;
     end;
-    procedure croupier(auxP:TPecas); {O subprograma Croupier separa as pedras para os jogadores e começa o jogo identificando quem está com a buxa 6-6 e iniciando o jogo a partir dele}
+    procedure croupier(auxP:TPecas); {O subprograma Croupier separa as pedras para os jogadores e comeï¿½a o jogo identificando quem estï¿½ com a buxa 6-6 e iniciando o jogo a partir dele}
     var i,j,n:integer;
     begin
      n:=28;
@@ -362,7 +362,7 @@ var score1,score2,score3,score4,Npedras1,Npedras2,Npedras3,Npedras4,i,vez,t1,t2,
      else
       ponto:=score;
     end;
-    procedure automatico(player:TPlayer;Npedras:integer); {subprograma que manipula os 3 jogadores da máquina}
+    procedure automatico(player:TPlayer;Npedras:integer); {subprograma que manipula os 3 jogadores da mï¿½quina}
     var j,i:integer;
         pedra:TPedra;
     begin
@@ -596,7 +596,7 @@ Begin
   for i:=1 to 28 do
    begin
     str(i,num);
-    nome:=concat('C:\Users\Guto\Desktop\UFBA\Introdução a Lógica de Programação\Compiladores\programas\2ºProjeto-DominóPontaDe5\Peças\Pedra_',num,'.arq');
+    nome:=concat('C:\DominoPontaDe5\Pecas\Pedra_',num,'.arq');
     assign(pedraArq[i],nome);
     reset(pedraArq[i]);
     read(pedraArq[i],pedras[i]);
@@ -616,7 +616,7 @@ Begin
   titulo;
   croupier(auxP);
   textcolor(yellow);
-  for i:=3 to 46 do {Um contorno pelo espaço onde as pedras do player 1 e os scores de todos estão situados}
+  for i:=3 to 46 do {Um contorno pelo espaï¿½o onde as pedras do player 1 e os scores de todos estï¿½o situados}
    begin
     gotoxy(26,i);
     write(chr(177));
@@ -649,7 +649,7 @@ Begin
   gotoxy(bC+4,bL+3);
   write ('4');
   textcolor(white);
-  gotoxy(bC,bL); {primeira peça do jogo}
+  gotoxy(bC,bL); {primeira peï¿½a do jogo}
   write (' ___ ___ ');
   gotoxy(bC,bL+1);
   write ('| 6 | 6 |');
@@ -659,7 +659,7 @@ Begin
   t2:=1;
   t3:=1;
   t4:=1;
-  repeat {O jogo em sí, manipulação das atividades dos players}
+  repeat {O jogo em sï¿½, manipulaï¿½ï¿½o das atividades dos players}
    jogada:=0;
    if vez<4 then
     vez:=vez+1
